@@ -1,0 +1,62 @@
+$orange: #FF9900;
+$black: #000000;
+$lightGray: #D1D3D4;
+$white: #ffffff;
+.logo_img {
+  max-width: 190px;
+  width: 100%;
+}
+
+p {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+
+.gray-text{
+  color:$lightGray ;
+}
+.menu {
+  &_logo {
+    & > img {
+      max-width: 190px;
+      width: 100%;
+    }
+  }
+
+  &_other {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &-basket svg {
+      max-width: 50px !important;
+      width: 100%;
+    }
+
+    & svg {
+      max-width: 32px;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.btn{
+  border-radius: 8px;
+  padding:10px 22px ;
+  font-weight: bold;
+  &-orange{
+    background-color: $orange;
+    color:$white ;
+
+  }
+}
+
+a.link{
+  text-decoration: none;
+  &-black{
+    color: $black ;
+  }
+}
